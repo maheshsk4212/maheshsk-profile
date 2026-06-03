@@ -329,59 +329,95 @@
     {
         "id": 3,
         "title": "UBA Bank Nigeria",
-        "role": "Senior UI/UX Designer",
+        "subtitle": "Simplifying Digital Banking for Millions of Customers",
+        "role": "UI/UX Designer",
+        "type": "flagship",
         "roleType": "senior",
         "visualStyle": "url('/assets/uba-card.png') center/cover no-repeat",
-        "focus": "Localization + scale",
-        "summary": "Scale: Delivered localized banking modules for 3 regional markets simultaneously.",
-        "tags": ["Scale", "Localization", "Pan-African"],
-        "client": "UBA Bank",
+        "focus": "Simplifying complex digital banking interactions for everyday mobile & internet banking.",
+        "summary": "How we simplified complex digital banking interactions and improved everyday customer banking experiences across mobile and internet banking channels.",
+        "tags": ["Customer Experience", "Mobile Banking", "Internet Banking", "Navigation Optimization", "Transaction Experience"],
+        "client": "UBA Bank Nigeria",
         "country": "Nigeria",
-        "platform": "Omnichannel Banking",
+        "platform": "Oracle OBDX",
         "duration": "10 Months",
+        "team": "Lead UX + Product Owners + Core Engineering",
+        "responsibilities": [
+            "Customer Journey Mapping",
+            "Information Architecture",
+            "Wireframing & Prototyping",
+            "Oracle OBDX Customization",
+            "Mobile-First Optimization",
+            "Trust & Accessibility Frameworks"
+        ],
         "content": {
-            "overview": "Designed a unified but highly localizable digital banking module that could be rapidly deployed across multiple African nations, each with unique regulatory and cultural requirements.",
+            "overview": "UBA wanted to improve the overall digital banking experience by simplifying customer journeys across mobile and internet banking channels while maintaining alignment with Oracle OBDX platform capabilities. The goal was to make everyday banking tasks faster, clearer, and easier for customers.",
             "challenges": [
                 {
-                    "title": "Multi-Market Scalability",
-                    "description": "UBA required a single design framework deployable across 3 African markets simultaneously, each with unique currencies, languages, and regulatory constraints."
+                    "title": "Complex Retail Journeys",
+                    "description": "Customers interacted with banking services frequently, but many daily journeys involved unnecessary complexity across Account Management, Fund Transfers, Beneficiary Management, Bill Payments, Card Services, and Transaction History."
                 },
                 {
-                    "title": "Low-Bandwidth Performance",
-                    "description": "Target users operate on 2G/3G networks, requiring UI optimizations that maintained richness while performing on constrained connections."
+                    "title": "Cumulative Daily Friction",
+                    "description": "Unlike enterprise users who perform specialized tasks occasionally, retail banking customers interact with the platform daily. Small usability issues created significant cumulative friction because customers performed these actions repeatedly."
                 }
             ],
             "discovery": {
-                "description": "Conducted market analysis across Nigeria, Ghana, and Kenya. Performed localization audits and competitive benchmarking against regional digital banking leaders.",
+                "description": "I mapped the most commonly used banking activities and evaluated their usability. Through this experience audit, I mapped high-frequency retail journeys and discovered that the core issue was discoverability and ease of use, not the underlying platform functionality.",
                 "activities": [
-                    "Market Analysis — Nigeria, Ghana, Kenya",
-                    "Localization Audit",
-                    "Competitive Benchmarking",
-                    "Low-bandwidth Performance Testing"
+                    "High-Traffic Journey Auditing (Fund Transfers & Accounts)",
+                    "Usability Evaluations (Bill Payments & Card Services)",
+                    "Discoverability Mapping",
+                    "Customer Priority Assessment"
                 ],
                 "image": "/assets/uba-localization.png"
             },
-            "process": ["Market Analysis", "Localization Audit", "Component Design", "Multi-Region Testing", "Rollout"],
-            "solution": "Developed a 'Pan-African' UI framework. This included dynamic data formatting logic, robust translation structures, and a premium visual aesthetic utilizing rich, warm tones that resonated across target demographics.",
+            "designApproach": {
+                "description": "We focused on reducing friction for everyday tasks. We established four core principles: Faster (reducing steps), Familiar (leveraging known UX patterns), Clear (removing transaction ambiguity), and Trustworthy (building reassurance into compliance moments).",
+                "principles": [
+                    "Faster — Reduce steps wherever possible",
+                    "Familiar — Use patterns customers already understand",
+                    "Clear — Remove ambiguity",
+                    "Trustworthy — Maintain confidence during financial transactions"
+                ],
+                "image": "/assets/uba-card.png"
+            },
+            "process": [
+                "Experience Audit",
+                "High-Traffic Journey Mapping",
+                "Information Architecture",
+                "Navigation Simplification",
+                "Transfer Experience Optimization",
+                "Mobile-First Design",
+                "Trust Integration",
+                "Success Measurement"
+            ],
+            "solution": "Reorganized the navigation layout based on usage frequency, customer priorities, banking mental models, and task grouping, moving from feature-based to task-oriented menus. Redesigned sensitive transfer flows by introducing cleaner info hierarchy, clearer transaction summaries, improved confirmations, and consistent interaction patterns to minimize transaction anxiety.",
             "deliverables": [
-                "Pan-African UI Framework",
-                "Localization Design Guide",
-                "Multi-Currency Components",
-                "Low-Bandwidth UI Optimization Guide"
+                "Task-Oriented Navigation System",
+                "Streamlined Fund Transfer UIs",
+                "Mobile Quick Access Dashboard Layout",
+                "High-Visibility Transaction Feedback States",
+                "Retail Card Services Redesign"
             ],
             "screens": {
-                "description": "Pan-African UI framework showing adaptable components across regional markets.",
-                "image": "/assets/uba-localization.png"
+                "description": "High-fidelity redesigned UBA mobile banking interfaces: optimized transfer confirmation screens, simplified dashboard layouts, and transaction history.",
+                "image": "/assets/uba-localization.png",
+                "desktopImage": "/assets/uba-card.png",
+                "desktopCaption": "Redesigned UBA retail card services management page — providing quick access to lock/unlock cards, update transaction limits, and manage security settings."
             },
             "impact": [
-                {"metric": "3", "label": "Simultaneous Market Launches"},
-                {"metric": "50%", "label": "Faster Regional Rollouts"},
-                {"metric": "4.6", "label": "Average App Store Rating"},
-                {"metric": "10M+", "label": "Users Across All Markets"}
+                {"metric": "Retail", "label": "Everyday Banking Simplified"},
+                {"metric": "Task", "label": "Task-Oriented Navigation"},
+                {"metric": "Mobile", "label": "Surfaced High-Traffic Actions"},
+                {"metric": "Trust", "label": "Reduced Transaction Anxiety"}
             ],
-            "leadership": "Spearheaded the localization strategy within the design team, defining clear parameters for how the core UI could flex to accommodate different currencies, languages, and regional financial products without breaking the global brand identity.",
-            "reflection": "Building for scale across diverse African markets requires deep respect for local context. The temptation to impose a single aesthetic must be resisted — genuine localization means the product feels native in every market, not just translated.",
-            "images": ["/assets/uba-localization.png", "/assets/uba-card.png"]
+            "leadership": "As UI/UX Designer, I acted as the primary advocate for the everyday retail customer. I spearheaded the navigation audit, designed the updated mobile dashboard layout, optimized the critical transfer flows within OBDX constraints, and collaborated with front-end developers to ensure layout responsiveness and accessibility.",
+            "reflection": "Working on UBA Bank Nigeria strengthened my ability to design customer-centric banking experiences at scale by balancing usability, trust, business requirements, and platform constraints across mobile and internet banking channels. Small UX improvements matter more in high-frequency journeys, and simplification often creates more value than adding functionality.",
+            "images": [
+                "/assets/uba-localization.png",
+                "/assets/uba-card.png"
+            ]
         },
         "link": "project.html?id=3"
     },
