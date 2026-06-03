@@ -1,0 +1,440 @@
+[
+    {
+        "id": 1,
+        "title": "NMB Bank Tanzania",
+        "subtitle": "Oracle OBDX Banking Transformation Program",
+        "role": "Lead Product Designer",
+        "type": "flagship",
+        "roleType": "lead",
+        "visualStyle": "url('/assets/nmb-hero-cover.png') center/cover no-repeat",
+        "focus": "Stakeholder workshops + OBDX customisation + banking transformation",
+        "summary": "Led end-to-end UX strategy for NMB Bank's Oracle OBDX transformation — aligning 12+ stakeholders across Tanzania and India to deliver a localized, WCAG-compliant digital banking platform in 4 months.",
+        "tags": ["Enterprise", "Banking", "Oracle OBDX", "Leadership", "Tanzania"],
+        "client": "NMB Bank Tanzania",
+        "country": "Tanzania & Bengaluru",
+        "platform": "Oracle OBDX",
+        "duration": "4 Months",
+        "team": "5 Designers + Product + Engineering",
+        "responsibilities": [
+            "Stakeholder Workshops",
+            "Discovery Activities",
+            "UX Strategy",
+            "Journey Mapping",
+            "Design Direction",
+            "Team Leadership",
+            "Design Governance"
+        ],
+        "content": {
+            "overview": "NMB Bank aimed to modernize its digital banking experience using Oracle OBDX while aligning the platform with local customer expectations, business requirements, and operational workflows. The objective was not to build a banking platform from scratch, but to customize and optimize Oracle OBDX to support NMB's digital transformation goals — maintaining platform integrity while delivering a distinctly Tanzanian banking experience.",
+            "challenges": [
+                {
+                    "title": "Platform Constraints vs. Local Needs",
+                    "description": "Oracle OBDX provided a rigid out-of-the-box experience that did not align with NMB's specific customer journeys — including M-Pawa micro-loans, USSD fallback flows, and local bill payment ecosystems (TANESCO, LUKU)."
+                },
+                {
+                    "title": "Multi-Stakeholder Alignment",
+                    "description": "12+ stakeholders across business, IT, compliance, and operations — in two geographies (Dar es Salaam and Bengaluru) — had conflicting priorities and limited prior exposure to design thinking methodologies."
+                },
+                {
+                    "title": "Low Digital Literacy Baseline",
+                    "description": "A significant proportion of NMB's target users were first-time digital banking adopters, requiring the design to drastically reduce cognitive load without compromising on feature richness."
+                },
+                {
+                    "title": "Regulatory & Compliance Alignment",
+                    "description": "Bank of Tanzania (BoT) regulations required specific consent flows, KYC documentation steps, and transaction limit disclosures that needed to be elegantly woven into the OBDX UI without creating friction."
+                }
+            ],
+            "discovery": {
+                "description": "Conducted intensive on-site discovery across two weeks in Dar es Salaam. Used contextual inquiry, intercept interviews at NMB branches, and shadowing sessions with front-line banking staff to map the real-world customer experience.",
+                "activities": [
+                    "12 Stakeholder Interviews (C-suite, IT, Compliance, Operations)",
+                    "30+ Customer Intercept Interviews at NMB Branches",
+                    "Heuristic Audit of existing OBDX baseline",
+                    "Competitive Analysis: M-Pesa, Equity Bank, KCB Mobile",
+                    "3 Co-creation workshops using Design Sprint methodology",
+                    "Affinity mapping & synthesis — 200+ insights clustered into 18 opportunity areas"
+                ],
+                "image": "/assets/nmb-stakeholder-workshop.png"
+            },
+            "personas": [
+                {
+                    "name": "Amina — The Hustle Queen",
+                    "description": "32-year-old small business owner in Kariakoo Market. Relies on M-Pawa for working capital. Primary device: Android entry-level. Expects speed and simplicity above all."
+                },
+                {
+                    "name": "David — The Corporate Treasurer",
+                    "description": "45-year-old CFO at a Dar es Salaam trading firm. Manages multi-account workflows, payroll disbursements, and FX transactions. Needs data density and audit trails."
+                },
+                {
+                    "name": "Grace — The First-Timer",
+                    "description": "24-year-old recent university graduate. First formal bank account. Low digital confidence. Needs strong onboarding guidance, clear language, and reassurance at every step."
+                }
+            ],
+            "designApproach": {
+                "description": "Led a constraint-first design approach — working within OBDX's customization boundaries while maximizing UX quality. Established a Design Governance Framework ensuring every customization decision was traceable to a user need, business requirement, or regulatory obligation.",
+                "principles": [
+                    "Local First — Every design decision validated against Tanzanian user context",
+                    "Progressive Disclosure — Reveal complexity only when the user is ready",
+                    "Trust by Design — Compliance moments become moments of confidence",
+                    "Resilient Flows — Every flow handles network failure and low-literacy gracefully"
+                ],
+                "image": "/assets/nmb-ux-wireframes.png",
+                "screensImage": "/assets/nmb-three-phones.png"
+            },
+            "process": [
+                "Stakeholder Alignment",
+                "Discovery & Research",
+                "Persona Development",
+                "Journey Mapping",
+                "OBDX Audit & Gap Analysis",
+                "Wireframing & Prototyping",
+                "Design System Setup",
+                "Usability Testing",
+                "Design Governance",
+                "Handoff & Launch"
+            ],
+            "journeyMap": {
+                "description": "Mapped 5 end-to-end customer journeys covering: Account Onboarding, Daily Transactions, M-Pawa Micro-Loans, Bill Payments, and Corporate Bulk Transfers. Each journey identified critical failure points in the existing OBDX baseline and mapped them to targeted UX interventions.",
+                "image": "/assets/nmb-journey-map.png"
+            },
+            "solution": "Delivered a holistic OBDX customization strategy that transformed the standard Oracle banking interface into a distinctly NMB-branded, locally-tuned digital banking experience. Key deliverables included a 200+ component design system, 14 end-to-end user flow prototypes, a comprehensive design governance document, and a phased rollout roadmap. The onboarding flow was redesigned from 22 steps to 8 guided steps with contextual help, reducing drop-off during KYC by an estimated 45%.",
+            "deliverables": [
+                "200+ Component Design System (Figma)",
+                "14 End-to-End User Flow Prototypes",
+                "Design Governance & OBDX Customization Guide",
+                "Customer Journey Maps (5 Key Journeys)",
+                "Usability Testing Report (3 Rounds, 45 Participants)",
+                "Accessibility Audit & Remediation Plan (WCAG 2.1 AA)",
+                "Phased Rollout Roadmap & Handoff Package"
+            ],
+            "screens": {
+                "description": "High-fidelity NMB OBDX screens: mobile banking home with TZS account balances and quick actions, personalised mood themes for UX delight, card management with NMB debit card controls — and a responsive desktop corporate dashboard showing real-time cash flow analytics and multi-account summaries.",
+                "image": "/assets/nmb-three-phones.png",
+                "desktopImage": "/assets/nmb-desktop-dashboard.png",
+                "adminImage": "/assets/nmb-desktop-team.png"
+            },
+            "impact": [
+                {"metric": "45%", "label": "Reduction in Onboarding Drop-off"},
+                {"metric": "12+", "label": "Stakeholders Aligned in 2 Weeks"},
+                {"metric": "200+", "label": "Components in Design System"},
+                {"metric": "8", "label": "Steps (from 22) in KYC Flow"},
+                {"metric": "3", "label": "Rounds of Usability Testing"},
+                {"metric": "WCAG 2.1", "label": "AA Compliance Achieved"}
+            ],
+            "leadership": "As Lead Product Designer, I was the primary design authority for the entire OBDX transformation. I established the design governance framework, ran all stakeholder workshops, directed 5 team members across research, visual design, and prototyping streams, and served as the liaison between Oracle's technical constraints and NMB's business vision. My on-site presence in Tanzania was critical — it enabled rapid user validation and built the trust of local stakeholders who had been skeptical of offshore-only design teams.",
+            "reflection": "This project reinforced that enterprise banking transformation is fundamentally a people problem — not a technology problem. The most valuable design decision we made was insisting on 3 rounds of in-country usability testing with real NMB customers. That evidence gave us the authority to push back on stakeholder assumptions that would have compromised the final experience. Good design leadership means protecting the user, even in rooms full of powerful people.",
+            "images": ["/assets/nmb-mobile-mockup.png", "/assets/nmb-desktop-dashboard.png", "/assets/nmb-three-phones.png", "/assets/nmb-desktop-team.png", "/assets/nmb-journey-map.png", "/assets/nmb-stakeholder-workshop.png"]
+        },
+        "link": "project.html?id=1"
+    },
+    {
+        "id": 2,
+        "title": "ADCB Bank Egypt",
+        "subtitle": "Enterprise Banking Design System Transformation",
+        "role": "Lead Product Designer",
+        "type": "flagship",
+        "roleType": "lead",
+        "visualStyle": "url('/assets/adcb-three-phones.png') center/cover no-repeat",
+        "focus": "Design Systems + Accessibility + Enterprise Scale + Multi-module Consistency",
+        "summary": "Designed and implemented a scalable Oracle OBDX design system across 10+ banking modules, improving consistency, accessibility, and delivery efficiency.",
+        "tags": ["Design Systems", "Accessibility", "Enterprise Scale", "Multi-module"],
+        "client": "ADCB Bank Egypt",
+        "country": "Egypt (MENA Region)",
+        "platform": "Oracle OBDX",
+        "duration": "14 Months",
+        "team": "5 Designers",
+        "responsibilities": [
+            "Design Systems",
+            "Accessibility (WCAG)",
+            "Enterprise Scale",
+            "Multi-module Consistency",
+            "Design Governance",
+            "Team Leadership"
+        ],
+        "content": {
+            "overview": "ADCB's digital banking ecosystem included multiple complex banking modules with varying requirements, workflows, and stakeholder expectations. As product enhancements continued, inconsistencies began appearing across Navigation, Forms, Tables, Approval workflows, Dashboard layouts, and Transaction journeys. Without a unified system, maintaining consistency became increasingly difficult, posing significant business risks including increased design debt, slower delivery cycles, inconsistent user experiences, difficult engineering implementations, and accessibility compliance challenges.",
+            "challenges": [
+                {
+                    "title": "Escalating Design Debt",
+                    "description": "Siloed features and custom request additions led to fragmented visual and behavioral patterns across independent portals, creating severe design debt."
+                },
+                {
+                    "title": "Slower Release Velocity",
+                    "description": "Engineers spent excessive cycles developing identical controls (such as menus or date pickers) from scratch for each module due to a lack of shared code patterns."
+                },
+                {
+                    "title": "Fragmented User Journeys",
+                    "description": "Retail, Corporate, and Trade Finance users experienced distinct, conflicting navigation paradigms and data inputs for standard operations."
+                },
+                {
+                    "title": "Accessibility Risks",
+                    "description": "Meeting strict regional accessibility mandates was impossible without a standardized, accessible-by-default set of framework primitives."
+                }
+            ],
+            "discovery": {
+                "description": "Before designing solutions, I conducted a systematic audit across all existing Oracle OBDX modules to understand the legacy landscape, catalog inconsistencies, and highlight concrete standardization opportunities.",
+                "activities": [
+                    "Navigation Patterns: Audited side menus, mega-menus, and responsive headers to flag structure disparities.",
+                    "Forms & Inputs: Identified inconsistent validation triggers, error styles, and keyboard-unfriendly custom controls.",
+                    "Data Grids & Tables: Cataloged 5+ different table behaviors for sorting, scrolling, and action layouts.",
+                    "Action Placement: Uncovered varying button placement hierarchies across multi-step transaction forms.",
+                    "Accessibility Gap Analysis: Checked color contrast, keyboard-only tab paths, and dynamic screen reader aria-live attributes."
+                ],
+                "image": "/assets/adcb-wireframe.png"
+            },
+            "strategy": {
+                "goal": "Create a reusable system that balances Oracle OBDX platform constraints, ADCB's custom business requirements, WCAG accessibility standards, and future scalability.",
+                "principles": [
+                    {
+                        "title": "Consistency First",
+                        "description": "Ensure users never have to relearn interaction behaviors. Components must operate identically across all banking modules."
+                    },
+                    {
+                        "title": "Accessibility by Design",
+                        "description": "Embed WCAG 2.1 AA criteria directly into core component tokens and layout templates, rather than managing them as post-build fixes."
+                    },
+                    {
+                        "title": "Modular Scalability",
+                        "description": "Build component architecture around atomic design systems, enabling future banking modules to plug-and-play without visual distortion."
+                    },
+                    {
+                        "title": "Delivery Efficiency",
+                        "description": "Co-design components alongside front-end engineering to ensure 1:1 design-to-code alignment and decrease handoff overhead."
+                    }
+                ]
+            },
+            "componentArchitecture": {
+                "description": "Developed a comprehensive component library designed around atomic structure, ensuring rigid layout stability and flexible styling options tailored for Oracle OBDX.",
+                "categories": [
+                    {
+                        "title": "Navigation System",
+                        "details": "Collapsible Side Navigation, Contextual Mega Navigation, Dashboard Quick-links"
+                    },
+                    {
+                        "title": "Forms & Fields",
+                        "details": "Floating Labels, Validation Patterns, Dropdowns, Date-pickers"
+                    },
+                    {
+                        "title": "Data Tables",
+                        "details": "Granular Sorting, Multi-column Filtering, Responsive Data Grids"
+                    },
+                    {
+                        "title": "Banking Components",
+                        "details": "Account Summary Cards, Interactive Transaction Cards, Approval Workflows (Maker/Checker)"
+                    }
+                ],
+                "beforeAfter": {
+                    "component": "Input Field Validation UI",
+                    "before": "Unlabeled inputs, low-contrast focus rings, color-only error indication (red text without icon or label), violating WCAG standards.",
+                    "after": "1:1 label pairing, 3:1 focus ring contrast, dual-indicator error state (icon + assistive text + color), fully screen-reader accessible."
+                }
+            },
+            "accessibilityFramework": {
+                "description": "Established a comprehensive accessibility framework to guarantee compliance across all user touchpoints without slowing down project delivery.",
+                "pillars": [
+                    {
+                        "title": "Color Contrast Optimization",
+                        "description": "Audited all custom ADCB brand color pairings to meet minimum 4.5:1 ratio for regular text and 3:1 for active UI controls."
+                    },
+                    {
+                        "title": "Keyboard-First Focus States",
+                        "description": "Programmed visible, high-contrast focus rings (minimum 3px thickness) and a skip navigation utility for all keyboard users."
+                    },
+                    {
+                        "title": "Semantic Form Accessibility",
+                        "description": "Integrated explicit labels, aria-describedby for errors, and automated screen reader announcer focus shifts upon validation failure."
+                    },
+                    {
+                        "title": "Non-Visual Status Feedback",
+                        "description": "Ensured all system states (error, warning, success) communicate via icons and screen reader labels, not just color shifts."
+                    }
+                ]
+            },
+            "crossModule": {
+                "description": "The strongest indicator of system strength is its reuse. We deployed the same core atomic elements across different modules:",
+                "modules": [
+                    {
+                        "name": "Retail Banking",
+                        "details": "Applied modular navigation and transaction cards to customer payment transfers, credit card portals, and personalized dashboards."
+                    },
+                    {
+                        "name": "Corporate Banking",
+                        "details": "Leveraged dense table grids and multi-approval workflows for corporate treasurers handling bulk disbursements and payroll."
+                    },
+                    {
+                        "name": "Trade Finance",
+                        "details": "Deployed structured forms and status timelines for complex processes like Letter of Credit applications and guarantee requests."
+                    }
+                ],
+                "sharedSummary": "By sharing a single atomic design system, ADCB maintained brand visual consistency and accessibility compliance while allowing each module to optimize its layout density for its specific user demographic."
+            },
+            "governance": {
+                "leadership": "Led a cross-functional team of 5 designers, conducting weekly design critiques and aligning with 12+ stakeholders across multiple geographies. Established a unified design governance framework to ensure the design system met both local regulatory needs and global ADCB standards.",
+                "process": [
+                    "Design Request: Module team identifies a need for a new layout pattern or component variation.",
+                    "System Audit & Review: Core design system team checks if existing patterns can solve the issue.",
+                    "Design & Stress-Test: If unique, component is created and audited for accessibility and OBDX styling limitations.",
+                    "Governance Approval: Design system core team approves and integrates the component into the master library.",
+                    "Development Handoff: Production-ready component specifications and engineering tokens are published."
+                ]
+            },
+            "solution": "Designed and deployed a unified Oracle OBDX design system for ADCB Egypt across 10+ core banking modules. The solution features custom modular components built directly into Oracle OBDX limits, and verified for full accessibility compliance. The redesigned interfaces improve task density, screen contrast, and keyboard focus states.",
+            "screens": {
+                "description": "Redesigned ADCB Egypt mobile banking interfaces integrated into a scalable design system: user onboarding & login with strict validation states, dynamic Account Summary showing total deposits and cash levels with high-contrast indicator gauges, and high-speed multi-beneficiary transfer history.",
+                "image": "/assets/adcb-three-phones.png",
+                "desktopImage": "/assets/adcb-desktop-dashboard.png",
+                "desktopCaption": "MacBook Pro showcase: ADCB web home dashboard with unified module indicators, cash flow details, upcoming payments tracking, and recent transfers queue.",
+                "adminImage": "/assets/adcb-desktop-screens.png",
+                "adminCaption": "Data density standardizations: responsive financial account listing grid (left) alongside credit card touchpoints information details page showing block workflows and active statements (right)."
+            },
+            "impact": [
+                {"metric": "10+", "label": "Banking Modules Aligned"},
+                {"metric": "40%", "label": "Reduction in Design Debt & Cycles"},
+                {"metric": "0", "label": "Accessibility Violations in Audits"},
+                {"metric": "5", "label": "Designers Led & Mentored"}
+            ],
+            "learnings": [
+                {
+                    "title": "Design systems are organizational tools, not UI libraries.",
+                    "description": "The success of a design system relies on governance, developer collaboration, and clear alignment — not just beautiful visual components."
+                },
+                {
+                    "title": "Accessibility should be integrated from the beginning.",
+                    "description": "Remediating accessibility post-launch costs 10x more. Designing accessible primitives from day one ensures scalability."
+                },
+                {
+                    "title": "Enterprise scale demands creative constraints.",
+                    "description": "Working within rigid platform boundaries like Oracle OBDX forces you to treat limitations as opportunities for structural optimization."
+                }
+            ],
+            "images": [
+                "/assets/adcb-three-phones.png",
+                "/assets/adcb-two-phones.png",
+                "/assets/adcb-desktop-dashboard.png",
+                "/assets/adcb-desktop-screens.png",
+                "/assets/adcb-wireframe.png",
+                "/assets/adcb-design-system.png",
+                "/assets/adcb-card.png"
+            ]
+        },
+        "link": "project.html?id=2"
+    },
+    {
+        "id": 3,
+        "title": "UBA Bank Nigeria",
+        "role": "Senior UI/UX Designer",
+        "roleType": "senior",
+        "visualStyle": "url('/assets/uba-card.png') center/cover no-repeat",
+        "focus": "Localization + scale",
+        "summary": "Scale: Delivered localized banking modules for 3 regional markets simultaneously.",
+        "tags": ["Scale", "Localization", "Pan-African"],
+        "client": "UBA Bank",
+        "country": "Nigeria",
+        "platform": "Omnichannel Banking",
+        "duration": "10 Months",
+        "content": {
+            "overview": "Designed a unified but highly localizable digital banking module that could be rapidly deployed across multiple African nations, each with unique regulatory and cultural requirements.",
+            "challenges": [
+                {
+                    "title": "Multi-Market Scalability",
+                    "description": "UBA required a single design framework deployable across 3 African markets simultaneously, each with unique currencies, languages, and regulatory constraints."
+                },
+                {
+                    "title": "Low-Bandwidth Performance",
+                    "description": "Target users operate on 2G/3G networks, requiring UI optimizations that maintained richness while performing on constrained connections."
+                }
+            ],
+            "discovery": {
+                "description": "Conducted market analysis across Nigeria, Ghana, and Kenya. Performed localization audits and competitive benchmarking against regional digital banking leaders.",
+                "activities": [
+                    "Market Analysis — Nigeria, Ghana, Kenya",
+                    "Localization Audit",
+                    "Competitive Benchmarking",
+                    "Low-bandwidth Performance Testing"
+                ],
+                "image": "/assets/uba-localization.png"
+            },
+            "process": ["Market Analysis", "Localization Audit", "Component Design", "Multi-Region Testing", "Rollout"],
+            "solution": "Developed a 'Pan-African' UI framework. This included dynamic data formatting logic, robust translation structures, and a premium visual aesthetic utilizing rich, warm tones that resonated across target demographics.",
+            "deliverables": [
+                "Pan-African UI Framework",
+                "Localization Design Guide",
+                "Multi-Currency Components",
+                "Low-Bandwidth UI Optimization Guide"
+            ],
+            "screens": {
+                "description": "Pan-African UI framework showing adaptable components across regional markets.",
+                "image": "/assets/uba-localization.png"
+            },
+            "impact": [
+                {"metric": "3", "label": "Simultaneous Market Launches"},
+                {"metric": "50%", "label": "Faster Regional Rollouts"},
+                {"metric": "4.6", "label": "Average App Store Rating"},
+                {"metric": "10M+", "label": "Users Across All Markets"}
+            ],
+            "leadership": "Spearheaded the localization strategy within the design team, defining clear parameters for how the core UI could flex to accommodate different currencies, languages, and regional financial products without breaking the global brand identity.",
+            "reflection": "Building for scale across diverse African markets requires deep respect for local context. The temptation to impose a single aesthetic must be resisted — genuine localization means the product feels native in every market, not just translated.",
+            "images": ["/assets/uba-localization.png", "/assets/uba-card.png"]
+        },
+        "link": "project.html?id=3"
+    },
+    {
+        "id": 4,
+        "title": "AI-Driven UX Workflow",
+        "role": "Innovation Lead",
+        "roleType": "innovation",
+        "visualStyle": "url('/assets/ai-workflow-card.png') center/cover no-repeat",
+        "focus": "30% faster onboarding & delivery",
+        "summary": "Innovation: Integrated AI tools to accelerate wireframing and user research synthesis.",
+        "tags": ["Innovation", "AI", "Process"],
+        "client": "Internal Process Optimization",
+        "country": "Global",
+        "platform": "Design Operations",
+        "duration": "Ongoing",
+        "content": {
+            "overview": "Championed the integration of generative AI into the team's standard operating procedures to eliminate repetitive tasks and accelerate design delivery cycles.",
+            "challenges": [
+                {
+                    "title": "Research Synthesis Bottleneck",
+                    "description": "The team was spending 40% of project time on manual synthesis of user interview transcripts, significantly slowing discovery-to-ideation cycles."
+                },
+                {
+                    "title": "Data Privacy & Governance",
+                    "description": "Integrating AI tools in an enterprise banking context required strict governance protocols to protect client data and maintain human validation of all outputs."
+                }
+            ],
+            "discovery": {
+                "description": "Evaluated 15+ AI tools against security, quality, and integration criteria. Piloted with 2 project teams before org-wide rollout.",
+                "activities": [
+                    "AI Tool Evaluation Framework",
+                    "Security & Privacy Assessment",
+                    "Pilot Programs with 2 Project Teams",
+                    "Productivity Benchmarking"
+                ],
+                "image": "/assets/ai-research-synthesis.png"
+            },
+            "process": ["Tool Evaluation", "Governance Framework", "Pilot Program", "Team Training", "Full Rollout"],
+            "solution": "Built a custom AI-driven workflow using secure, local LLM instances. Automated the extraction of insights from user interview transcripts and utilized AI plugins within Figma to generate rapid layout explorations and context-aware dummy data for prototypes.",
+            "deliverables": [
+                "AI Workflow Playbook",
+                "Data Privacy & Governance Framework",
+                "Figma AI Plugin Integration Guide",
+                "Research Synthesis Templates"
+            ],
+            "screens": {
+                "description": "AI-assisted research synthesis dashboard showing automated insight clustering.",
+                "image": "/assets/ai-research-synthesis.png"
+            },
+            "impact": [
+                {"metric": "30%", "label": "Faster Wireframing & Ideation"},
+                {"metric": "2x", "label": "Richer Design Review Context"},
+                {"metric": "Org-wide", "label": "AI Framework Adopted"},
+                {"metric": "40%", "label": "Less Time on Research Synthesis"}
+            ],
+            "leadership": "Championed the integration of generative AI as a force multiplier for design teams — not a replacement for human judgment. Developed strict governance protocols ensuring data privacy and human-in-the-loop validation for all AI-generated outputs.",
+            "reflection": "The most important lesson from this initiative was that AI adoption in design is a change management challenge more than a technology challenge. Success required building trust, demonstrating quick wins, and establishing clear guardrails before pushing for org-wide adoption.",
+            "images": ["/assets/ai-research-synthesis.png", "/assets/ai-workflow-card.png"]
+        },
+        "link": "project.html?id=4"
+    }
+]

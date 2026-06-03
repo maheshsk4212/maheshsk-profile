@@ -1,0 +1,183 @@
+/* Resume & Shibasaki Style Refinements */
+
+/* Highlight Text Effect */
+.highlight-text {
+    background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-accent) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 88%;
+    padding: 0 4px;
+    display: inline;
+}
+
+/* Accordion Component */
+.accordion {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 24px 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-bold);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    transition: color 0.2s;
+}
+
+.accordion-header:hover {
+    color: #444;
+}
+
+.accordion-header::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.accordion-header[aria-expanded="true"]::after {
+    content: '−';
+    /* Minus sign */
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-header[aria-expanded="true"]+.accordion-content {
+    max-height: 1000px;
+    /* Arbitrary large height */
+    padding-bottom: 24px;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+}
+
+/* Resume Page Specifics */
+.resume-page {
+    background: #fcfcfc;
+}
+
+/* Header Refactor */
+.resume-header-v2 {
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.resume-name-v2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    color: var(--color-text);
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.resume-role-v2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.resume-tagline {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 24px;
+    font-weight: 500;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Top Detail Grid */
+.resume-grid-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .resume-grid-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+}
+
+.resume-section-heading {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.resume-section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--color-accent);
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+/* Accordion Lists inside Grid */
+.skill-accordion-item {
+    border-bottom: 1px solid #eee;
+}
+
+.skill-header {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Roles Full Width */
+.roles-section {
+    margin-top: 60px;
+}
+
+.role-meta {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+    margin-top: 4px;
+}
+
+.role-details-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.role-details-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+    color: #333;
+}
+
+.role-details-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
