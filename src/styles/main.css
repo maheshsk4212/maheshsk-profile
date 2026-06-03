@@ -2242,8 +2242,6 @@ body.body--locked .site-header {
 /* ── Behance CTA Section ──────────────────────────────────────────────────── */
 .behance-cta-section {
     margin-top: 60px;
-    padding-top: 40px;
-    border-top: 1px solid #eaeaea;
 }
 .behance-cta-card {
     background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
