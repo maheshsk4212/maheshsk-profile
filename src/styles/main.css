@@ -911,7 +911,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #eee;
+    border-top: none;
     padding-top: 64px;
 }
 .footer-name {
