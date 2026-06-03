@@ -1003,6 +1003,20 @@ section {
     .hamburger.is-active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -5px);
     }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
 }
 
 /* Page Transition Fade In */
@@ -1717,5 +1731,417 @@ body.page-loaded {
     background: #fff;
     border-radius: 33px; /* Slightly matches the inner container curve */
 }
+
+/* ── AI Discovery 6-Step Model & Prototyping ──────────────────────────────── */
+.steps-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+.step-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+@media (min-width: 768px) {
+    .step-card {
+        grid-template-columns: 240px 1fr;
+        gap: 24px;
+    }
+}
+.step-card:hover {
+    border-color: var(--color-primary);
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 82, 204, 0.04);
+}
+.step-card__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.step-card__number {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--color-primary);
+    opacity: 0.15;
+    transition: opacity 0.3s ease;
+}
+.step-card:hover .step-card__number {
+    opacity: 0.8;
+}
+.step-card__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-text-bold);
+    line-height: 1.3;
+}
+.step-card__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+@media (min-width: 576px) {
+    .step-card__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.step-card__block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.step-card__block--tools,
+.step-card__block--outcome {
+    grid-column: span 1;
+}
+@media (min-width: 576px) {
+    .step-card__block--tools,
+    .step-card__block--outcome {
+        grid-column: span 2;
+    }
+}
+.step-card__label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.step-card__value {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+.step-card__value--outcome {
+    color: var(--color-primary);
+    font-weight: 600;
+    background: #eff6ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #dbeafe;
+    display: inline-block;
+    width: fit-content;
+}
+.step-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.step-card__list li {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: 12px;
+}
+.step-card__list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+.step-card__tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 2px;
+}
+.tool-tag {
+    font-size: 0.75rem;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #475569;
+    font-weight: 600;
+}
+
+/* ── Workflow Comparison ─────────────────────────────────────────────────── */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 24px;
+}
+@media (min-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.comparison-column {
+    background: var(--color-bg-secondary);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    transition: border-color 0.3s ease;
+}
+.comparison-column--traditional {
+    border-left: 4px solid #ef4444; /* Red for Traditional */
+}
+.comparison-column--ai {
+    border-left: 4px solid #10b981; /* Green for AI-Driven */
+    background: linear-gradient(180deg, var(--color-bg-secondary) 0%, rgba(16, 185, 129, 0.02) 100%);
+}
+.comparison-column:hover {
+    border-color: rgba(0, 82, 204, 0.2);
+}
+.comparison-column__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-text-bold);
+}
+.comparison-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.comparison-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+}
+.comp-step-index {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    background: #9ca3af;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.comparison-column--ai .comp-step-index {
+    background: #10b981;
+}
+.comp-step-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.comp-step-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-text-bold);
+}
+.comp-step-desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--color-text-light);
+}
+.comp-arrow {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    margin: 2px 0;
+    font-weight: 300;
+}
+
+/* ── Stakeholder Shift Before/After ───────────────────────────────────────── */
+.stakeholder-comparison {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+@media (min-width: 768px) {
+    .stakeholder-comparison {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.stakeholder-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.stakeholder-card--before {
+    border-top: 4px solid #ef4444;
+}
+.stakeholder-card--after {
+    border-top: 4px solid #10b981;
+    background: linear-gradient(180deg, var(--color-bg-secondary) 0%, rgba(16, 185, 129, 0.02) 100%);
+}
+.stakeholder-card__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-text-bold);
+    margin: 0;
+}
+.stakeholder-card__subtitle {
+    font-size: 0.88rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+}
+.stakeholder-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.stakeholder-feedback-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.feedback-icon {
+    font-size: 0.75rem;
+    font-weight: 800;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.feedback-icon--negative {
+    color: #ef4444;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+.feedback-icon--positive {
+    color: #10b981;
+    background: #d1fae5;
+    border: 1px solid #a7f3d0;
+}
+.feedback-text {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--color-text);
+}
+.stakeholder-card--before .feedback-text {
+    font-style: italic;
+    color: #ef4444;
+}
+
+/* ── Business & Workflow Impact Grid ──────────────────────────────────────── */
+.business-impact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+@media (min-width: 768px) {
+    .business-impact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.impact-category-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+.impact-category-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(0, 82, 204, 0.04);
+}
+.impact-category-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-bold);
+    margin: 0;
+}
+.impact-category-card--design {
+    border-top: 4px solid var(--color-primary);
+}
+.impact-category-card--stakeholder {
+    border-top: 4px solid #8b5cf6; /* Purple/Indigo for stakeholder scale */
+}
+.impact-category-card--organization {
+    border-top: 4px solid #10b981;
+}
+.impact-category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.impact-category-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.impact-bullet {
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.impact-category-card--stakeholder .impact-bullet {
+    color: #8b5cf6;
+}
+.impact-category-card--organization .impact-bullet {
+    color: #10b981;
+}
+.impact-text {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--color-text-light);
+}
+.impact-category-card:hover .impact-text {
+    color: var(--color-text);
+}
+
+/* ── Step Details Responsive Mobile Adjustments ───────────────────────────── */
+@media (max-width: 767px) {
+    .steps-timeline {
+        gap: 16px;
+    }
+    .step-card {
+        padding: 20px;
+    }
+    .step-card__number {
+        font-size: 1.75rem;
+    }
+    .comparison-grid {
+        gap: 20px;
+    }
+    .stakeholder-comparison {
+        gap: 20px;
+    }
+    .business-impact-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .comp-arrow {
+        transform: rotate(0);
+        margin: 2px 0;
+    }
+}
+
 
 

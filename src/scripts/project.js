@@ -89,6 +89,149 @@ if (project) {
         </section>`;
     }
 
+    // 3.0.1 The 6-Step Product Discovery Acceleration Model (New)
+    if (content.sixSteps && content.sixSteps.length > 0) {
+        sectionsHTML += `
+        <section class="project-section fade-in">
+            <h2 class="project-section__title">The 6-Step Product Discovery Acceleration Model</h2>
+            <div class="steps-timeline">
+                ${content.sixSteps.map(step => `
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__number">${step.step}</span>
+                            <h3 class="step-card__title">${step.title}</h3>
+                        </div>
+                        <div class="step-card__body">
+                            <div class="step-card__block">
+                                <span class="step-card__label">Objective</span>
+                                <p class="step-card__value">${step.objective}</p>
+                            </div>
+                            <div class="step-card__block">
+                                <span class="step-card__label">Activities</span>
+                                <ul class="step-card__list">
+                                    ${step.activities.map(act => `<li>${act}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="step-card__block step-card__block--tools">
+                                <span class="step-card__label">AI Tooling</span>
+                                <div class="step-card__tools">
+                                    ${step.aiUsage.split(',').map(tool => `<span class="tool-tag">${tool.trim()}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div class="step-card__block step-card__block--outcome">
+                                <span class="step-card__label">Key Outcome</span>
+                                <p class="step-card__value step-card__value--outcome">${step.outcome}</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        </section>`;
+    }
+
+    // 3.0.2 Traditional vs. AI-Driven Discovery Workflow (New)
+    if (content.workflowComparison) {
+        const comp = content.workflowComparison;
+        sectionsHTML += `
+        <section class="project-section fade-in">
+            <h2 class="project-section__title">${comp.title}</h2>
+            <div class="comparison-grid">
+                <div class="comparison-column comparison-column--traditional">
+                    <h3 class="comparison-column__title">Traditional Approach</h3>
+                    <div class="comparison-flow">
+                        ${comp.traditional.map((item, i) => `
+                            <div class="comparison-step">
+                                <span class="comp-step-index">${i + 1}</span>
+                                <div class="comp-step-info">
+                                    <h4 class="comp-step-label">${item.label}</h4>
+                                    <p class="comp-step-desc">${item.desc}</p>
+                                </div>
+                            </div>
+                            ${i < comp.traditional.length - 1 ? '<div class="comp-arrow">↓</div>' : ''}
+                        `).join('')}
+                    </div>
+                </div>
+                <div class="comparison-column comparison-column--ai">
+                    <h3 class="comparison-column__title">AI-Driven Approach</h3>
+                    <div class="comparison-flow">
+                        ${comp.aiDriven.map((item, i) => `
+                            <div class="comparison-step">
+                                <span class="comp-step-index">${i + 1}</span>
+                                <div class="comp-step-info">
+                                    <h4 class="comp-step-label">${item.label}</h4>
+                                    <p class="comp-step-desc">${item.desc}</p>
+                                </div>
+                            </div>
+                            ${i < comp.aiDriven.length - 1 ? '<div class="comp-arrow">↓</div>' : ''}
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        </section>`;
+    }
+
+    // 3.0.3 Shift in Stakeholder Engagement (New)
+    if (content.stakeholderChange) {
+        const sh = content.stakeholderChange;
+        sectionsHTML += `
+        <section class="project-section fade-in">
+            <h2 class="project-section__title">Shift in Stakeholder Engagement</h2>
+            <p class="project-section__text project-section__text--lead">
+                Moving from abstract, static screen reviews to interactive prototypes transformed how business and product stakeholders collaborated.
+            </p>
+            <div class="stakeholder-comparison">
+                <div class="stakeholder-card stakeholder-card--before">
+                    <h3 class="stakeholder-card__title">Before: ${sh.before.method}</h3>
+                    <p class="stakeholder-card__subtitle">Reviewing static screens led to recurring questions and alignment friction:</p>
+                    <ul class="stakeholder-card__list">
+                        ${sh.before.feedback.map(f => `
+                            <li class="stakeholder-feedback-item">
+                                <span class="feedback-icon feedback-icon--negative">?</span>
+                                <span class="feedback-text">"${f}"</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+                <div class="stakeholder-card stakeholder-card--after">
+                    <h3 class="stakeholder-card__title">After: ${sh.after.method}</h3>
+                    <p class="stakeholder-card__subtitle">Interacting with realistic prototypes yielded immediate clarity and confidence:</p>
+                    <ul class="stakeholder-card__list">
+                        ${sh.after.benefits.map(b => `
+                            <li class="stakeholder-feedback-item">
+                                <span class="feedback-icon feedback-icon--positive">✓</span>
+                                <span class="feedback-text">${b}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            </div>
+        </section>`;
+    }
+
+    // 3.0.4 Detailed Business & Workflow Impact (New)
+    if (content.businessImpact) {
+        const bi = content.businessImpact;
+        sectionsHTML += `
+        <section class="project-section fade-in">
+            <h2 class="project-section__title">Business & Workflow Impact</h2>
+            <div class="business-impact-grid">
+                ${Object.entries(bi).map(([key, category]) => `
+                    <div class="impact-category-card impact-category-card--${key}">
+                        <h3 class="impact-category-title">${category.title}</h3>
+                        <ul class="impact-category-list">
+                            ${category.items.map(item => `
+                                <li class="impact-category-item">
+                                    <span class="impact-bullet">✦</span>
+                                    <span class="impact-text">${item}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                `).join('')}
+            </div>
+        </section>`;
+    }
+
     // 3.1 Design System Strategy (New)
     if (content.strategy) {
         const strat = content.strategy;

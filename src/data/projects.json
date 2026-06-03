@@ -424,60 +424,220 @@
     {
         "id": 4,
         "title": "AI-Driven UX Workflow",
+        "subtitle": "The 6-Step Product Discovery Acceleration Model",
         "role": "Innovation Lead",
+        "type": "flagship",
         "roleType": "innovation",
         "visualStyle": "url('/assets/ai-workflow-card.png') center/cover no-repeat",
-        "focus": "30% faster onboarding & delivery",
-        "summary": "Innovation: Integrated AI tools to accelerate wireframing and user research synthesis.",
-        "tags": ["Innovation", "AI", "Process"],
+        "focus": "Generative AI discovery & 1-day vibe-coded prototyping",
+        "summary": "Designed and scaled an AI-assisted product discovery framework across banking and enterprise initiatives, reducing design validation and clarification effort by 60%.",
+        "tags": ["Process Innovation", "Generative AI", "Vibe Coding", "Rapid Prototyping"],
         "client": "Internal Process Optimization",
-        "country": "Global",
+        "country": "Global Initiative",
         "platform": "Design Operations",
-        "duration": "Ongoing",
+        "duration": "Ongoing Initiative",
+        "team": "UX + Product + Sales Teams",
+        "responsibilities": [
+            "Workflow Strategy",
+            "AI Tool Orchestration",
+            "Vibe-Coded Prototyping",
+            "Data Governance",
+            "Cross-Functional Adoption"
+        ],
         "content": {
-            "overview": "Championed the integration of generative AI into the team's standard operating procedures to eliminate repetitive tasks and accelerate design delivery cycles.",
+            "overview": "To address the bottlenecks of traditional linear design workflows, I introduced an AI-assisted product discovery framework—the 6-Step Product Discovery Acceleration Model. By integrating generative AI tools into secondary research, discovery preparation, and qualitative synthesis, and replacing static wireframes with vibe-coded interactive prototypes, we eliminated repetitive tasks, matured requirements before UI design, and accelerated alignment across cross-functional teams.",
             "challenges": [
                 {
-                    "title": "Research Synthesis Bottleneck",
-                    "description": "The team was spending 40% of project time on manual synthesis of user interview transcripts, significantly slowing discovery-to-ideation cycles."
+                    "title": "Slow Linear Workflows",
+                    "description": "Traditional discovery workflows (Research -> Wireframes -> UI Design -> Review -> Rework) spent too much time on static screens, resulting in late-stage design changes and costly engineering rework."
                 },
                 {
-                    "title": "Data Privacy & Governance",
-                    "description": "Integrating AI tools in an enterprise banking context required strict governance protocols to protect client data and maintain human validation of all outputs."
+                    "title": "Research Synthesis Bottlenecks",
+                    "description": "Synthesizing large volumes of qualitative user research and competitive audit data took days of manual effort, delaying workshop prep and ideation phases."
+                },
+                {
+                    "title": "Stakeholder Misalignment & Ambiguity",
+                    "description": "Stakeholders struggled to interpret static screens, asking: 'Can we see how it behaves?' or 'What happens when I click this?', leading to delayed approvals."
                 }
             ],
-            "discovery": {
-                "description": "Evaluated 15+ AI tools against security, quality, and integration criteria. Piloted with 2 project teams before org-wide rollout.",
-                "activities": [
-                    "AI Tool Evaluation Framework",
-                    "Security & Privacy Assessment",
-                    "Pilot Programs with 2 Project Teams",
-                    "Productivity Benchmarking"
+            "sixSteps": [
+                {
+                    "step": "01",
+                    "title": "AI-Powered Secondary Research",
+                    "objective": "Build deep domain understanding within hours instead of days.",
+                    "activities": [
+                        "Market research & competitor benchmarking",
+                        "Competitor feature comparison analysis",
+                        "Regulatory considerations & best practices"
+                    ],
+                    "aiUsage": "Gemini, ChatGPT, Claude",
+                    "outcome": "Rapid understanding of the problem space before initial stakeholder discussions."
+                },
+                {
+                    "step": "02",
+                    "title": "AI-Assisted Discovery Prep",
+                    "objective": "Improve workshop effectiveness and structure.",
+                    "activities": [
+                        "Generate stakeholder interview questions",
+                        "Create user interview scripts & discussion guides",
+                        "Structure discovery workshop agendas & hypotheses",
+                        "Draft risk identification frameworks"
+                    ],
+                    "aiUsage": "Gemini, Claude",
+                    "outcome": "More structured, focused, and high-impact discovery workshops."
+                },
+                {
+                    "step": "03",
+                    "title": "AI-Based Insight Analysis",
+                    "objective": "Convert large volumes of qualitative data into actionable insights.",
+                    "activities": [
+                        "Synthesize workshop notes & interview recordings",
+                        "Analyze stakeholder feedback & product requirements"
+                    ],
+                    "aiUsage": "Clustering & semantic search tools",
+                    "outcome": "Theme clustering, pain point extraction, and gap analysis generated at speed."
+                },
+                {
+                    "step": "04",
+                    "title": "Opportunity Identification",
+                    "objective": "Discover hidden product opportunities before design begins.",
+                    "activities": [
+                        "Brainstorm missing feature identification",
+                        "Map workflow improvements & UX opportunities",
+                        "Draft process optimization & innovation recommendations"
+                    ],
+                    "aiUsage": "Gemini, Claude",
+                    "outcome": "Broader solution exploration with significantly reduced design blind spots."
+                },
+                {
+                    "step": "05",
+                    "title": "Vibe-Coded Interactive Prototypes",
+                    "objective": "Validate ideas with high-fidelity behavior before investing in UI production.",
+                    "activities": [
+                        "Build production-like interactive proof-of-concepts within 1 day",
+                        "Integrate micro-interactions, dynamic navigation, and live data simulations"
+                    ],
+                    "aiUsage": "Gemini CLI, Codex CLI, Figma Make",
+                    "outcome": "Stakeholders experience and feel the product instead of reviewing static, abstract screens."
+                },
+                {
+                    "step": "06",
+                    "title": "Rapid Validation & Alignment",
+                    "objective": "Speed up stakeholder approvals and align cross-functional expectations.",
+                    "activities": [
+                        "Conduct interactive prototype walkthroughs",
+                        "Collect real-time feedback on UX flows and logic",
+                        "Align Product, Engineering, Sales, and Clients on the validated concept"
+                    ],
+                    "aiUsage": "Gemini-assisted feedback synthesis",
+                    "outcome": "Reaching design sign-off within 1 day, reducing downstream UI rework by 60%."
+                }
+            ],
+            "workflowComparison": {
+                "title": "Traditional vs. AI-Driven Discovery",
+                "traditional": [
+                    {"label": "Research", "desc": "Manual competitor audits & market study"},
+                    {"label": "Wireframes", "desc": "Static grayscale screens & user flows"},
+                    {"label": "UI Design", "desc": "High-fidelity mockups of static states"},
+                    {"label": "Review", "desc": "Stakeholder meetings with static PDFs/Figma"},
+                    {"label": "Rework", "desc": "Redesigning layouts due to behavior misunderstandings"}
                 ],
-                "image": "/assets/ai-research-synthesis.png"
+                "aiDriven": [
+                    {"label": "Research & Prep", "desc": "AI-accelerated domain benchmarking & script creation"},
+                    {"label": "AI Synthesis", "desc": "Rapid clustering of user research pain points"},
+                    {"label": "Interactive Prototype", "desc": "Vibe-coded 1-day POC with real-world interactions"},
+                    {"label": "Validation", "desc": "Stakeholders interact with the realistic, live concept"},
+                    {"label": "Figma Design", "desc": "Refinement of final visuals with 60% fewer revisions"},
+                    {"label": "Development", "desc": "Handoff with highly matured requirements"}
+                ]
             },
-            "process": ["Tool Evaluation", "Governance Framework", "Pilot Program", "Team Training", "Full Rollout"],
-            "solution": "Built a custom AI-driven workflow using secure, local LLM instances. Automated the extraction of insights from user interview transcripts and utilized AI plugins within Figma to generate rapid layout explorations and context-aware dummy data for prototypes.",
+            "stakeholderChange": {
+                "before": {
+                    "method": "Static Screen Reviews",
+                    "feedback": [
+                        "Can we see how it behaves?",
+                        "What happens when I click this?",
+                        "How will this work in production?"
+                    ]
+                },
+                "after": {
+                    "method": "Interactive Prototypes",
+                    "benefits": [
+                        "Better understanding of interaction flows",
+                        "Faster decisions & earlier alignment",
+                        "Higher confidence before engineering commits",
+                        "Reduced ambiguity and improved collaboration"
+                    ]
+                }
+            },
+            "businessImpact": {
+                "design": {
+                    "title": "Design Impact",
+                    "items": [
+                        "Approximately 60% reduction in design validation effort",
+                        "Matured requirements before final UI design starts",
+                        "Major behavioral issues identified before visual production"
+                    ]
+                },
+                "stakeholder": {
+                    "title": "Stakeholder Impact",
+                    "items": [
+                        "Interactive prototypes drive more constructive discussion",
+                        "Teams experience concepts directly before implementation",
+                        "Decisions and alignment happen significantly earlier"
+                    ]
+                },
+                "organization": {
+                    "title": "Organizational Impact",
+                    "items": [
+                        "Product Teams: Significantly improved feature alignment",
+                        "Sales Teams: High-fidelity prototypes for sales demonstrations",
+                        "Pre-Sales Teams: Interactive walkthroughs during solution pitches",
+                        "Clients: Early-stage exploration of production-like concepts"
+                    ]
+                }
+            },
+            "learnings": [
+                {
+                    "title": "AI Does Not Replace UX",
+                    "description": "Generative AI serves as an accelerator for discovery, synthesis, and prototyping, but human judgment, empathy, and product thinking remain essential."
+                },
+                {
+                    "title": "Experiences > Documentation",
+                    "description": "People react far better to interactive, live experiences than static wires or textual requirements documentation. Ambiguity vanishes."
+                },
+                {
+                    "title": "Validation Before Visual Design",
+                    "description": "Aligning on interactive behaviors before producing high-fidelity Figma screens and assets dramatically reduces waste and redesign iterations."
+                },
+                {
+                    "title": "The Future of UX is Hybrid",
+                    "description": "The strongest contemporary designers are hybrid practitioners who combine human-centric UX principles with generative AI, coding, and rapid prototyping capabilities."
+                }
+            ],
+            "solution": "By deploying this framework across banking and enterprise initiatives, we successfully established a hybrid design model. Instead of relying on traditional wireframes, we developed interactive proof-of-concepts within a day, allowing product and business stakeholders to touch, click, and validate workflows before any visual production or development began.",
             "deliverables": [
-                "AI Workflow Playbook",
-                "Data Privacy & Governance Framework",
-                "Figma AI Plugin Integration Guide",
-                "Research Synthesis Templates"
+                "Generative AI Discovery Playbook",
+                "6-Step Discovery Model Framework Documentation",
+                "Figma AI Integration Guide",
+                "Vibe-Coding CLI Prototyping Templates"
             ],
             "screens": {
                 "description": "AI-assisted research synthesis dashboard showing automated insight clustering.",
                 "image": "/assets/ai-research-synthesis.png"
             },
             "impact": [
-                {"metric": "30%", "label": "Faster Wireframing & Ideation"},
-                {"metric": "2x", "label": "Richer Design Review Context"},
-                {"metric": "Org-wide", "label": "AI Framework Adopted"},
-                {"metric": "40%", "label": "Less Time on Research Synthesis"}
+                {"metric": "60%", "label": "Reduction in Validation Effort"},
+                {"metric": "1 Day", "label": "Average Proof-of-Concept Build"},
+                {"metric": "Multiple", "label": "Adopted across Banking Projects"},
+                {"metric": "Cross-Dept", "label": "Used by UX, Product, and Sales"}
             ],
-            "leadership": "Championed the integration of generative AI as a force multiplier for design teams — not a replacement for human judgment. Developed strict governance protocols ensuring data privacy and human-in-the-loop validation for all AI-generated outputs.",
-            "reflection": "The most important lesson from this initiative was that AI adoption in design is a change management challenge more than a technology challenge. Success required building trust, demonstrating quick wins, and establishing clear guardrails before pushing for org-wide adoption.",
-            "images": ["/assets/ai-research-synthesis.png", "/assets/ai-workflow-card.png"]
-        },
-        "link": "project.html?id=4"
+            "leadership": "Led the creation and adoption of this generative AI discovery workflow. Established data governance and strict client privacy filters for LLM prompting, trained design teams, and demonstrated immediate business impact by using vibe-coded prototypes to secure client sign-off on strategic dashboard features.",
+            "reflection": "This framework proved that prototyping is the ultimate alignment tool. Generative AI allows us to compress weeks of linear wireframing and synthesis into a single day of interactive iteration, changing the dynamic from 'reviewing designs' to 'experiencing solutions'.",
+            "images": [
+                "/assets/ai-workflow-card.png",
+                "/assets/ai-research-synthesis.png"
+            ]
+        }
     }
 ]
