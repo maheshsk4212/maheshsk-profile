@@ -1664,36 +1664,50 @@ body.page-loaded {
 .css-device-mockup-container {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 40px;
     margin-top: 32px;
-    background: linear-gradient(135deg, #0b0f19 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #090d16 0%, #171f2e 100%);
     padding: 60px 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6), 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .css-phone-mockup {
-    width: 290px;
-    height: 590px;
+    width: 280px;
+    height: 570px;
     background: #000;
-    border-radius: 40px;
-    border: 10px solid #111827;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-radius: 44px;
+    border: 11px solid #18181b; /* Sleek dark bezel */
+    box-shadow: 
+        0 0 0 1.5px rgba(255, 255, 255, 0.08), /* Outer metallic ring */
+        0 15px 35px rgba(0, 0, 0, 0.6); /* Soft shadow */
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.css-phone-mockup::before {
+.css-phone-mockup:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 0 0 1.5px rgba(255, 255, 255, 0.12),
+        0 25px 50px rgba(0, 0, 0, 0.8);
+}
+/* Realistic Glass Screen Reflection */
+.css-phone-mockup::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 110px;
-    height: 25px;
-    background: #111827;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    z-index: 10;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(110deg, 
+        rgba(255, 255, 255, 0.13) 0%, 
+        rgba(255, 255, 255, 0.04) 25%, 
+        transparent 25.1%
+    );
+    transform: translateX(-40%);
+    pointer-events: none;
+    z-index: 5;
 }
 .css-phone-screen {
     width: 100%;
@@ -1701,6 +1715,7 @@ body.page-loaded {
     object-fit: cover;
     display: block;
     background: #fff;
+    border-radius: 33px; /* Slightly matches the inner container curve */
 }
 
 
