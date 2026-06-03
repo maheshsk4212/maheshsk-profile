@@ -608,6 +608,23 @@ function renderProjectContent() {
         </section>`;
     }
 
+    // ── Behance Call To Action ────────────────────────────────────────────────
+    sectionsHTML += `
+    <section class="project-section fade-in behance-cta-section">
+        <div class="behance-cta-card">
+            <div class="behance-cta-content">
+                <h3 class="behance-cta-title">Explore More Work</h3>
+                <p class="behance-cta-text">For additional user interface concepts, interactive high-fidelity prototypes, and design artifacts, visit my Behance portfolio.</p>
+            </div>
+            <a href="https://behance.net/maheshsk1" target="_blank" rel="noopener noreferrer" class="behance-cta-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="behance-logo-svg">
+                    <path d="M8.228 12.302c.812-.134 1.436-.453 1.874-.959c.437-.506.656-1.184.656-2.033c0-.9-.234-1.611-.703-2.133C9.587 6.655 8.85 6.4 7.842 6.4H3v9.645h5.109c1.094 0 1.9-.272 2.417-.816c.517-.544.775-1.284.775-2.222c0-.709-.191-1.285-.572-1.728c-.381-.444-.945-.77-1.692-.958zM5.568 8.167h2.09c.5 0 .878.106 1.135.318c.257.213.385.539.385.98c0 .413-.131.723-.393.929c-.262.206-.633.309-1.111.309h-2.11V8.167zm2.467 6.136h-2.47v-2.235h2.47c.506 0 .895.12 1.168.361c.272.24.408.594.408 1.062c0 .413-.129.728-.387.945c-.258.217-.655.326-1.189.326zM21 11.233h-6.287c.058-.696.281-1.229.67-1.599c.389-.37.904-.555 1.545-.555c.57 0 1.02.148 1.349.444c.329.296.536.671.621 1.127h2.012c-.116-.929-.536-1.674-1.258-2.235C18.94 7.854 17.973 7.57 16.762 7.57c-1.396 0-2.483.435-3.262 1.304c-.779.869-1.168 2.062-1.168 3.581c0 1.545.378 2.738 1.135 3.58.757.842 1.815 1.263 3.175 1.263c1.23 0 2.213-.346 2.949-1.037c.735-.691 1.144-1.629 1.225-2.813H18.8c-.097.555-.333.978-.711 1.27c-.378.292-.857.438-1.436.438c-.611 0-1.096-.188-1.455-.563c-.359-.375-.544-.949-.555-1.722H21v-.388zm-4.329-2.247c-.506 0-.895.12-1.168.361c-.272.24-.408.594-.408 1.062h3.151c0-.468-.136-.822-.408-1.062c-.272-.24-.662-.361-1.167-.361zM13.626 5h6.748v1.362h-6.748V5z"/>
+                </svg>
+                View Behance Portfolio
+            </a>
+        </section>
+    `;
+
     document.getElementById('project-content').innerHTML = sectionsHTML;
 
     // ── Scroll animations ─────────────────────────────────────────────────────

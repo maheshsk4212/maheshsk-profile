@@ -2239,5 +2239,80 @@ body.body--locked .site-header {
     opacity: 0.5;
 }
 
+/* ── Behance CTA Section ──────────────────────────────────────────────────── */
+.behance-cta-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eaeaea;
+}
+.behance-cta-card {
+    background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 12px 32px rgba(0, 82, 204, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.behance-cta-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 82, 204, 0.25);
+}
+.behance-cta-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.behance-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.behance-cta-btn {
+    background: white;
+    color: #0052cc;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    border: 1px solid transparent;
+}
+.behance-cta-btn:hover {
+    background: #f0f5ff;
+    transform: scale(1.03);
+}
+.behance-logo-svg {
+    transition: transform 0.2s ease;
+}
+.behance-cta-btn:hover .behance-logo-svg {
+    transform: rotate(5deg);
+}
+
+@media (min-width: 768px) {
+    .behance-cta-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 40px 50px;
+        gap: 40px;
+    }
+    .behance-cta-text {
+        margin: 0;
+    }
+    .behance-cta-btn {
+        flex-shrink: 0;
+    }
+}
+
 
 
