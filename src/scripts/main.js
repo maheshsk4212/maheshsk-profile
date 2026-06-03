@@ -30,7 +30,7 @@ if (grid) {
         </div>
       </div>
       <div class="project-card__actions">
-        <a href="/${project.link}" class="link-case-study">Read Case Study <span class="arrow">&rarr;</span></a>
+        <a href="${project.link}" class="link-case-study">Read Case Study <span class="arrow">&rarr;</span></a>
       </div>
     `;
 

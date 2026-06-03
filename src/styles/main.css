@@ -784,7 +784,7 @@ section {
 /* Impact Stat Cards */
 .impact-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 8px;
 }
@@ -792,7 +792,7 @@ section {
     background: var(--color-bg-secondary);
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    padding: 28px 20px;
+    padding: 28px 16px; /* Slightly reduced side padding for extra text space */
     text-align: center;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -802,12 +802,15 @@ section {
 }
 .impact-stat__number {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Scaled down slightly to prevent overflow */
     font-weight: 800;
     color: var(--color-primary);
-    line-height: 1;
+    line-height: 1.1;
     margin-bottom: 8px;
     letter-spacing: -0.02em;
+    white-space: nowrap; /* Prevent wrapping of hyphenated words like Cross-Dept */
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .impact-stat__label {
     display: block;
@@ -2141,6 +2144,99 @@ body.page-loaded {
         transform: rotate(0);
         margin: 2px 0;
     }
+}
+
+/* ── Password Gate Overlay ────────────────────────────────────────────────── */
+.password-gate-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #090d16 0%, #171f2e 100%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: var(--spacing-md);
+    transition: opacity 0.3s ease;
+}
+.password-gate-modal {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+.password-lock-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+}
+.password-gate-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+.password-gate-desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+.password-gate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.password-gate-form input[type="password"] {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: white;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.password-gate-form input[type="password"]:focus {
+    border-color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.2);
+}
+.password-error-message {
+    color: #ef4444;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 10px;
+    height: 18px;
+}
+.password-back-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+.password-back-link:hover {
+    color: white;
+}
+
+/* ── Content lock styling ─────────────────────────────────────────────────── */
+body.body--locked .project-detail,
+body.body--locked .site-footer {
+    display: none !important;
+}
+body.body--locked .site-header {
+    pointer-events: none; /* Disable nav clicks while locked */
+    opacity: 0.5;
 }
 
 

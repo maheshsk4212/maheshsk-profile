@@ -4,7 +4,55 @@ const params = new URLSearchParams(window.location.search);
 const projectId = parseInt(params.get('id'));
 const project = projects.find(p => p.id === projectId);
 
-if (project) {
+const ACCESS_PASSWORD = 'mahesh-ux'; // Simple, professional password
+
+function checkAuth() {
+    document.body.classList.add('page-loaded');
+    const isAuth = sessionStorage.getItem('case_study_auth') === 'true';
+    const gateEl = document.getElementById('password-gate');
+    
+    if (isAuth) {
+        document.body.classList.remove('body--locked');
+        if (gateEl) gateEl.style.display = 'none';
+        renderProjectContent();
+    } else {
+        document.body.classList.add('body--locked');
+        if (gateEl) gateEl.style.display = 'flex';
+        setupPasswordListener();
+    }
+}
+
+function setupPasswordListener() {
+    const form = document.getElementById('password-form');
+    const input = document.getElementById('case-study-pass');
+    const errorEl = document.getElementById('password-error');
+    
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (input.value === ACCESS_PASSWORD) {
+                sessionStorage.setItem('case_study_auth', 'true');
+                document.body.classList.remove('body--locked');
+                const gateEl = document.getElementById('password-gate');
+                if (gateEl) {
+                    gateEl.style.opacity = '0';
+                    setTimeout(() => {
+                        gateEl.style.display = 'none';
+                    }, 300);
+                }
+                renderProjectContent();
+            } else {
+                errorEl.textContent = 'Incorrect password. Please try again.';
+                input.value = '';
+                input.focus();
+            }
+        });
+    }
+}
+
+function renderProjectContent() {
+    if (!project) return;
+    
     document.title = `${project.title} | Case Study — Mahesh SK`;
 
     // ── Hero Title & Subtitle ─────────────────────────────────────────────────
@@ -560,21 +608,6 @@ if (project) {
         </section>`;
     }
 
-    // 14. Full Image Gallery (remaining images)
-    if (content.images && content.images.length > 0) {
-        sectionsHTML += `
-        <section class="project-section fade-in">
-            <h2 class="project-section__title">Project Gallery</h2>
-            <div class="project-gallery">
-                ${content.images.map((img, i) => `
-                    <div class="project-gallery__item">
-                        <img src="${img}" alt="${project.title} — Design Artifact ${i + 1}" loading="lazy">
-                    </div>
-                `).join('')}
-            </div>
-        </section>`;
-    }
-
     document.getElementById('project-content').innerHTML = sectionsHTML;
 
     // ── Scroll animations ─────────────────────────────────────────────────────
@@ -590,10 +623,11 @@ if (project) {
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     }, 100);
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.body.classList.add('page-loaded');
-    });
 
+}
+
+if (project) {
+    checkAuth();
 } else {
     document.body.innerHTML = '<h1>Project not found</h1><a href="/">Return home</a>';
 }
