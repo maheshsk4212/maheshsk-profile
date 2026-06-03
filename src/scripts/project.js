@@ -273,7 +273,18 @@ if (project) {
             ${da.screensImage ? `
             <div class="section-image-wrap" style="margin-top:28px;">
                 <p class="section-image__caption">From wireframe to final product — the NMB OBDX mobile experience across key user journeys.</p>
+                ${project.id === 1 ? `
+                <div class="css-device-mockup-container">
+                    <div class="css-phone-mockup">
+                        <img src="/assets/nmb-cheque-request.png" alt="Request Cheque Book Screen" class="css-phone-screen" loading="lazy">
+                    </div>
+                    <div class="css-phone-mockup">
+                        <img src="/assets/nmb-pending-approvals.png" alt="Pending Approvals Screen" class="css-phone-screen" loading="lazy">
+                    </div>
+                </div>
+                ` : `
                 <img src="${da.screensImage}" alt="Final Screens — ${project.title}" class="section-image" loading="lazy">
+                `}
             </div>` : ''}
         </section>`;
     }

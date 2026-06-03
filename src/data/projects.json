@@ -6,7 +6,7 @@
         "role": "Lead Product Designer",
         "type": "flagship",
         "roleType": "lead",
-        "visualStyle": "url('/assets/nmb-hero-cover.png') center/cover no-repeat",
+        "visualStyle": "url('/assets/nmb-three-phones.png') center/cover no-repeat",
         "focus": "Stakeholder workshops + OBDX customisation + banking transformation",
         "summary": "Led end-to-end UX strategy for NMB Bank's Oracle OBDX transformation — aligning 12+ stakeholders across Tanzania and India to deliver a localized, WCAG-compliant digital banking platform in 4 months.",
         "tags": ["Enterprise", "Banking", "Oracle OBDX", "Leadership", "Tanzania"],
@@ -79,7 +79,7 @@
                     "Resilient Flows — Every flow handles network failure and low-literacy gracefully"
                 ],
                 "image": "/assets/nmb-ux-wireframes.png",
-                "screensImage": "/assets/nmb-three-phones.png"
+                "screensImage": "/assets/nmb-cheque-request.png"
             },
             "process": [
                 "Stakeholder Alignment",
@@ -123,7 +123,14 @@
             ],
             "leadership": "As Lead Product Designer, I was the primary design authority for the entire OBDX transformation. I established the design governance framework, ran all stakeholder workshops, directed 5 team members across research, visual design, and prototyping streams, and served as the liaison between Oracle's technical constraints and NMB's business vision. My on-site presence in Tanzania was critical — it enabled rapid user validation and built the trust of local stakeholders who had been skeptical of offshore-only design teams.",
             "reflection": "This project reinforced that enterprise banking transformation is fundamentally a people problem — not a technology problem. The most valuable design decision we made was insisting on 3 rounds of in-country usability testing with real NMB customers. That evidence gave us the authority to push back on stakeholder assumptions that would have compromised the final experience. Good design leadership means protecting the user, even in rooms full of powerful people.",
-            "images": ["/assets/nmb-mobile-mockup.png", "/assets/nmb-desktop-dashboard.png", "/assets/nmb-three-phones.png", "/assets/nmb-desktop-team.png", "/assets/nmb-journey-map.png", "/assets/nmb-stakeholder-workshop.png"]
+            "images": [
+                "/assets/nmb-mobile-mockup.png",
+                "/assets/nmb-desktop-dashboard.png",
+                "/assets/nmb-three-phones.png",
+                "/assets/nmb-desktop-team.png",
+                "/assets/nmb-journey-map.png",
+                "/assets/nmb-stakeholder-workshop.png"
+            ]
         },
         "link": "project.html?id=1"
     },

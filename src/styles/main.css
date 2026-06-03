@@ -1648,5 +1648,59 @@ body.page-loaded {
         transform: rotate(90deg);
         margin: 4px 0;
     }
+    .css-device-mockup-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 20px;
+    }
+    .css-phone-mockup {
+        width: 260px;
+        height: 530px;
+    }
 }
+
+/* ── CSS iPhone Device Mockup ─────────────────────────────────────────────── */
+.css-device-mockup-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    background: linear-gradient(135deg, #0b0f19 0%, #1e293b 100%);
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.css-phone-mockup {
+    width: 290px;
+    height: 590px;
+    background: #000;
+    border-radius: 40px;
+    border: 10px solid #111827;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.css-phone-mockup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 25px;
+    background: #111827;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10;
+}
+.css-phone-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #fff;
+}
+
 
