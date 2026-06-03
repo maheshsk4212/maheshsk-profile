@@ -96,6 +96,37 @@ function renderProjectContent() {
     const content = project.content || {};
     let sectionsHTML = '';
 
+    // 0. TL;DR Summary
+    if (project.tldr) {
+        sectionsHTML += `
+        <section class="project-section fade-in tldr-section">
+            <h2 class="project-section__title">TL;DR: The 30-Second Summary</h2>
+            <div class="tldr-grid">
+                <div class="tldr-card">
+                    <div class="tldr-header">
+                        <span class="tldr-icon">⚠️</span>
+                        <h3 class="tldr-title">The Problem</h3>
+                    </div>
+                    <p class="tldr-text">${project.tldr.problem}</p>
+                </div>
+                <div class="tldr-card">
+                    <div class="tldr-header">
+                        <span class="tldr-icon">💡</span>
+                        <h3 class="tldr-title">The Solution</h3>
+                    </div>
+                    <p class="tldr-text">${project.tldr.solution}</p>
+                </div>
+                <div class="tldr-card">
+                    <div class="tldr-header">
+                        <span class="tldr-icon">📈</span>
+                        <h3 class="tldr-title">The Impact</h3>
+                    </div>
+                    <p class="tldr-text">${project.tldr.impact}</p>
+                </div>
+            </div>
+        </section>`;
+    }
+
     // 1. Overview
     if (content.overview) {
         sectionsHTML += `

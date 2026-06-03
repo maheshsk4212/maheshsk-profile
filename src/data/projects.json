@@ -156,7 +156,12 @@
                 "/assets/nmb-stakeholder-workshop.png"
             ]
         },
-        "link": "case-study.html?id=1"
+        "link": "case-study.html?id=1",
+        "tldr": {
+            "problem": "NMB Bank needed to modernize digital banking using Oracle OBDX, but the out-of-the-box platform lacked alignment with Tanzanian ecosystems (M-Pawa) and suffered from poor UX for low-literacy users.",
+            "solution": "Led a constraint-first UX strategy across 12+ stakeholders in Dar es Salaam and Bengaluru, customizing OBDX for progressive disclosure and regulatory compliance.",
+            "impact": "<ul><li>Delivered a fully localized, WCAG-compliant platform in just <strong>4 months</strong>.</li><li>Bridged the gap between an enterprise platform and real-world African banking needs.</li></ul>"
+        }
     },
     {
         "id": 4,
@@ -445,7 +450,12 @@
                 "/assets/hero-visual.png"
             ]
         },
-        "link": "case-study.html?id=4"
+        "link": "case-study.html?id=4",
+        "tldr": {
+            "problem": "Traditional UX validation processes were slow, taking weeks to move from static wireframes to stakeholder alignment, resulting in recurring feedback loops.",
+            "solution": "Architected a generative AI discovery workflow utilizing secure, local LLMs for research synthesis and 'vibe-coding' interactive prototypes.",
+            "impact": "<ul><li>Reduced design validation effort by <strong>60%</strong>.</li><li>Replaced static screen reviews with high-fidelity, <strong>1-Day Proof-of-Concept</strong> builds that accelerated C-suite sign-off.</li></ul>"
+        }
     },
     {
         "id": 2,
@@ -654,7 +664,12 @@
                 "/assets/adcb-card.png"
             ]
         },
-        "link": "case-study.html?id=2"
+        "link": "case-study.html?id=2",
+        "tldr": {
+            "problem": "ADCB's corporate banking dashboard was fragmented, making it difficult for CFOs to manage multi-account workflows, bulk approvals, and FX rates efficiently.",
+            "solution": "Redesigned the corporate banking experience by establishing a new design system, streamlining Maker/Checker workflows, and centralizing cash flow analytics.",
+            "impact": "<ul><li>Significantly improved task completion rates for <strong>bulk corporate transactions</strong>.</li><li>Enhanced operational efficiency for premium banking clients.</li></ul>"
+        }
     },
     {
         "id": 3,
@@ -767,6 +782,11 @@
                 "/assets/uba-card.png"
             ]
         },
-        "link": "case-study.html?id=3"
+        "link": "case-study.html?id=3",
+        "tldr": {
+            "problem": "UBA Bank required a unified digital banking experience across 20 African countries, facing massive challenges in localization and varied regulatory compliance.",
+            "solution": "Developed a scalable UI architecture and a flexible design system capable of adapting to diverse regional requirements while maintaining a cohesive pan-African brand identity.",
+            "impact": "<ul><li>Rolled out a standardized yet deeply localized banking interface across <strong>20 countries</strong>.</li><li>Reduced time-to-market for new regional features and unified the digital ecosystem.</li></ul>"
+        }
     }
 ]
