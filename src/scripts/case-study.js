@@ -610,7 +610,7 @@ function renderProjectContent() {
 
     // ── Behance Call To Action ────────────────────────────────────────────────
     sectionsHTML += `
-    <section class="project-section fade-in behance-cta-section">
+    <section class="project-section behance-cta-section">
         <div class="behance-cta-card">
             <div class="behance-cta-content">
                 <h3 class="behance-cta-title">Explore More Work</h3>
